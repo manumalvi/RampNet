@@ -1,3 +1,28 @@
+# -**************************************************************************
+# -*   CHANGE HISTORY:
+# -*
+# -*   Revision      Date        Change Author   Description
+# -*        1       25/06/19     Manu Malvi
+#
+# /***************************** FILE PROLOGUE *****************************/
+#
+# -**************************************************************************
+# -* FILE NAME:
+# -*   top_bar_elements.py
+# -*
+# -* PURPOSE:
+# -*   This file provides the test case functions to be executed in batch mode.
+# -*
+# -* NOTES:
+# -*
+# -* COPYRIGHT NOTICE:
+# -*  COPYRIGHT 2004 - 2010, 2012 Rockwell International.
+# -*  Unpublished.
+# -*  All rights reserved under copyright laws.  Proprietary
+# -*  and confidential material.  Distribution, use and
+# -*  disclosure restricted by Rockwell International.
+# -**************************************************************************
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import os
@@ -135,6 +160,7 @@ class top_bar_element():
         try:
             self.search_box()
             self.driver.find_element_by_xpath(self.enter_search).send_keys(name)
+            time.sleep(2)
             element = self.driver.find_element_by_tag_name("span").text
             print(element)
             if element == "No results Found!!!":
@@ -424,6 +450,9 @@ class top_bar_element():
             print(check_notification)
             if check_notification == 'No Notifications':
                 print("There is no new Notification, you can view Past Voilations")
+                #print("check_notificatios : Test PASS")
+            else:
+                print("There are new Notifications....")
                 print("check_notificatios : Test PASS")
             self.driver.find_element_by_xpath(self.notifications).click()
         except:
@@ -576,65 +605,3 @@ class top_bar_element():
             raise
 
 
-
-
-# driver = webdriver.Chrome(executable_path=r'C:\Users\mmalvi\Desktop\chromedriver.exe')
-# print ("I am in top_bar_element file")
-#
-# driver.maximize_window()
-# driver.get("http://inl00085/")
-# # top_bar_element = top_bar_element(driver)
-# #next_elements = next_elements(driver)
-# # top_bar_element.cial_login_page()
-# # time.sleep(2)
-# top_bar_element.enter_username("avatar")
-# time.sleep(2)
-# top_bar_element.enter_password("qwerty")
-# time.sleep(2)
-# top_bar_element.click_login_button()
-# time.sleep(2)
-# # top_bar_element.click_full_screen()
-# # time.sleep(2)
-# # top_bar_element.cial_logo_on_header()
-# # time.sleep(2)
-# # top_bar_element.arinc_logo()
-# # time.sleep(2)
-# # top_bar_element.check_time_clock()
-# # time.sleep(2)
-# # top_bar_element.search_box()
-# # time.sleep(2)
-# # top_bar_element.enter_in_search()
-# # time.sleep(2)
-# # top_bar_element.invalid_vehicle_search()
-# # time.sleep(2)
-# # top_bar_element.valid_vehicle_search()
-# # time.sleep(2)
-# # top_bar_element.search_point_button()
-# # time.sleep(2)
-# # top_bar_element.search_point_showAll()
-# # time.sleep(2)
-# # top_bar_element.search_point_Add_button()
-# # # top_bar_element.add_new_search_point_without_name()
-# # # top_bar_element.add_new_search_point()
-# # # top_bar_element.save_and_add_button()
-# # top_bar_element.notam_button()
-# # time.sleep(2)
-# # top_bar_element.check_the_notam()
-# # time.sleep(2)
-# # top_bar_element.filter_button()
-# # time.sleep(2)
-# # top_bar_element.filter_reset_button()
-# # time.sleep(2)
-# # top_bar_element.geofence_showall()
-# # time.sleep(2)
-# # top_bar_element.notification()
-# # time.sleep(2)
-# # top_bar_element.mute_unmute_notifications()
-# # time.sleep(2)
-# # top_bar_element.check_notificatios()
-# # time.sleep(2)
-# # top_bar_element.past_voilations_button()
-# # time.sleep(2)
-# # top_bar_element.check_reports()
-#
-# driver.close()
