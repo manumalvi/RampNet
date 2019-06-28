@@ -1,3 +1,28 @@
+# -**************************************************************************
+# -*   CHANGE HISTORY:
+# -*
+# -*   Revision      Date        Change Author   Description
+# -*        1       25/06/19     Manu Malvi
+#
+# /***************************** FILE PROLOGUE *****************************/
+#
+# -**************************************************************************
+# -* FILE NAME:
+# -*   LoginPage.py
+# -*
+# -* PURPOSE:
+# -*   This file provides the test case functions to be executed in batch mode.
+# -*
+# -* NOTES:
+# -*
+# -* COPYRIGHT NOTICE:
+# -*  COPYRIGHT 2004 - 2010, 2012 Rockwell International.
+# -*  Unpublished.
+# -*  All rights reserved under copyright laws.  Proprietary
+# -*  and confidential material.  Distribution, use and
+# -*  disclosure restricted by Rockwell International.
+# -**************************************************************************
+
 import time
 
 class LoginPage():
