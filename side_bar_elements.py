@@ -1,5 +1,30 @@
-import time
+# -**************************************************************************
+# -*   CHANGE HISTORY:
+# -*
+# -*   Revision      Date        Change Author   Description
+# -*        1       25/06/19     Manu Malvi
+#
+# /***************************** FILE PROLOGUE *****************************/
+#
+# -**************************************************************************
+# -* FILE NAME:
+# -*   side_bar_elements.py
+# -*
+# -* PURPOSE:
+# -*   This file provides the test case functions to be executed in batch mode.
+# -*
+# -* NOTES:
+# -*
+# -* COPYRIGHT NOTICE:
+# -*  COPYRIGHT 2004 - 2010, 2012 Rockwell International.
+# -*  Unpublished.
+# -*  All rights reserved under copyright laws.  Proprietary
+# -*  and confidential material.  Distribution, use and
+# -*  disclosure restricted by Rockwell International.
+# -**************************************************************************
 
+
+import time
 
 class next_elements():
     '''
@@ -238,52 +263,3 @@ class next_elements():
             print("image_navigator : Test FAIL")
             raise
 
-        #driver = webdriver.Chrome(executable_path="C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
-#driver = webdriver.Chrome(executable_path=r'C:\Users\mmalvi\Desktop\chromedriver.exe')
-#print ("I am temp file")
-# driver.maximize_window()
-# driver.get("http://inl00085/")
-# next_elements = next_elements(driver)
-# next_elements.enter_username("avatar")
-# time.sleep(2)
-# next_elements.enter_password("qwerty")
-# time.sleep(2)
-# next_elements.click_login_button()
-# time.sleep(2)
-# next_elements.home_button()
-# time.sleep(2)
-# next_elements.playback_button()
-# time.sleep(2)
-# next_elements.playback_close()
-# time.sleep(2)
-# next_elements.playback_calander_open("31.05.2019")
-# time.sleep(2)
-# next_elements.playback_time_open()
-# time.sleep(2)
-# next_elements.playback_start_stop_button()
-# time.sleep(2)
-# next_elements.playback_download()
-# time.sleep(2)
-# next_elements.click_full_screen()
-# time.sleep(2)
-# next_elements.click_zoom_in()
-# time.sleep(2)
-# next_elements.click_zoom_out()
-# time.sleep(2)
-# next_elements.click_map_view()
-# time.sleep(2)
-# next_elements.click_map_layer()
-# time.sleep(2)
-# next_elements.check_box1()
-# time.sleep(2)
-# next_elements.check_box2()
-# time.sleep(2)
-# next_elements.check_box3()
-# time.sleep(2)
-# next_elements.click_map_layer()
-# time.sleep(2)
-# next_elements.satellite()
-# time.sleep(2)
-# next_elements.image_navigator()
-
-#driver.close()
