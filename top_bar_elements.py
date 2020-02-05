@@ -12,15 +12,6 @@
 # -*
 # -* PURPOSE:
 # -*   This file provides the test case functions to be executed in batch mode.
-# -*
-# -* NOTES:
-# -*
-# -* COPYRIGHT NOTICE:
-# -*  COPYRIGHT 2004 - 2010, 2012 Rockwell International.
-# -*  Unpublished.
-# -*  All rights reserved under copyright laws.  Proprietary
-# -*  and confidential material.  Distribution, use and
-# -*  disclosure restricted by Rockwell International.
 # -**************************************************************************
 
 from selenium import webdriver
